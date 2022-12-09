@@ -5,15 +5,12 @@
 :root {
   --header-height: 3rem;
 
-  /* ===== COLORS mode HSL ( hue, saturation, lightness ) ===== */
-
-  --hue: 0;
-  --sat: 0%;
-  --title-color: hsl(var(--hue), var(--sat), 20%);
-  --title-color-dark: hsl(var(--hue), var(--sat), 0%);
-  --text-color: hsl(var(--hue), var(--sat), 46%);
-  --body-color: hsl(var(--hue), var(--sat), 98%);
+  
+  --title-color: #00ADB5;
+  --text-color:#ECECEC;
+  --body-color: #222831;
   --container-color: #fff;
+  --header-color: #393E46;
 
   /* ===== Fonts and typography =====  */
 
@@ -90,7 +87,7 @@ textarea {
 
 body {
   background-color: var(--body-color);
-  color: var(--text-color);
+  color: var(--text-color)
 }
 
 h1,
@@ -135,10 +132,6 @@ img {
   margin-bottom: 4rem;
 }
 
-.section__title,
-.section__subtitle {
-  text-align: center;
-}
 /* ===== LAYOUT ===== */
 
 .container {
@@ -163,12 +156,12 @@ img {
 }
 
 .button:hover {
-  background-color: var(--title-color-dark);
+  background-color: var(--header-color);
 }
 
-.button__icon {
+/* .button__icon {
   margin-left: var(--mb-0-5);
-}
+} */
 
 .button-flex {
   display: inline-flex;
@@ -179,7 +172,6 @@ img {
 
 /* Large Devices */
 @media screen and (max-width: 992px) {
-  
 }
 
 /* Medium Devices */
@@ -191,34 +183,6 @@ img {
 
 /* Small Devices */
 @media screen and (max-width: 350px) {
-
-
 }
-
-
-
-
-
-
-
 
 /* /////// MEDIAS ////// */
-
-/* Large Devices */
-@media screen and (max-width: 992) {
-
-}
-
-/* Medium Devices */
-@media screen and (max-width: 768px) {
-
-}
-
-@media screen and (max-width: 576px) {
-}
-
-/* Small Devices */
-@media screen and (max-width: 350px) {
-
-
-}
