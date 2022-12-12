@@ -3,14 +3,14 @@
 /* ===== Variables CSS ===== */
 
 :root {
-  --header-height: 3rem;
+  --header-height: 4rem;
 
   
   --title-color: #00ADB5;
   --text-color:#ECECEC;
   --body-color: #222831;
   --container-color: #fff;
-  --header-color: #393E46;
+  --header-color: var(--body-color);
 
   /* ===== Fonts and typography =====  */
 
