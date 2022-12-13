@@ -1,0 +1,29 @@
+.hero{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 1rem;
+    place-items:  center;
+}
+
+
+@media screen and (min-width: 992px) {
+
+
+}
+
+/* Medium Devices */
+@media screen and (max-width: 780px) {
+
+    .hero{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 576px) {
+}
+
+/* Small Devices */
+@media screen and (max-width: 350px) {
+}

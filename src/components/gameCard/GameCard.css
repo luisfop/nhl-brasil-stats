@@ -1,0 +1,98 @@
+.gamecard {
+  border: solid white;
+  width: 25rem;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+}
+
+.gamecard__time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+}
+
+.gamecard__time > p {
+  font-size: var(--smaller-font-size);
+}
+
+.teams {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 3;
+  gap: 2rem;
+}
+
+.team {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.team__title {
+  font-size: var(--small-font-size);
+}
+
+.team__image {
+  width: 6rem;
+  height: 6rem;
+  background: white;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 992px) {
+  .gamecard {
+    width: 20rem;
+    height: 12rem;
+  }
+
+  .gamecard__time{
+    font-size: var(--normal-font-size);
+  }
+
+  .team__image{
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .gamecard__time > p {
+    font-size: var(--tiny-font-size);
+  }
+}
+
+
+
+@media screen and (max-width: 576px) {
+  .gamecard {
+    width: 16rem;
+    height: 10rem;
+  }
+
+  .gamecard__time{
+    font-size: var(--tiny-font-size);
+  }
+
+  .team__image{
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .gamecard__time > p {
+    font-size: var(--tiny-font-size);
+  }
+
+  .team__title {
+    font-size: var(--tiny-font-size);
+  }
+
+}
+
+/* Small Devices */
+@media screen and (max-width: 350px) {
+}
