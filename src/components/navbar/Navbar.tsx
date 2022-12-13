@@ -7,10 +7,12 @@ const Navbar = () => {
 
             <h1>NHL Brasil Stats</h1>
 
-            <ul className="navigation__list">
-                <li>Times</li>
-                <li>Jogos</li>
-            </ul>
+            <nav className="navigation__list">
+                <ul>
+                    <li>Times</li>
+                    <li>Jogos</li>
+                </ul>
+            </nav>
 
         </header>
     )

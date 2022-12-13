@@ -5,9 +5,8 @@
 :root {
   --header-height: 4rem;
 
-  
-  --title-color: #00ADB5;
-  --text-color:#ECECEC;
+  --title-color: #00adb5;
+  --text-color: #ececec;
   --body-color: #222831;
   --container-color: #fff;
   --header-color: var(--body-color);
@@ -87,7 +86,7 @@ textarea {
 
 body {
   background-color: var(--body-color);
-  color: var(--text-color)
+  color: var(--text-color);
 }
 
 h1,
@@ -118,7 +117,10 @@ img {
 /* ===== REUSABLE CSS CLASSES ===== */
 
 .section {
-  padding: 6rem 0 2rem;
+  height: calc(100vh - 4rem);
+  /* border: solid white 2px; */
+  margin-top: var(--header-height);
+  padding: 3rem;
 }
 
 .section__title {
@@ -128,8 +130,12 @@ img {
 
 .section__subtitle {
   display: block;
-  font-size: var(--small-font-size);
+  font-size: var(--h3-font-size);
   margin-bottom: 4rem;
+}
+
+.card__title{
+  text-align: center;
 }
 
 /* ===== LAYOUT ===== */
@@ -138,6 +144,9 @@ img {
   max-width: 968px;
   margin-left: auto;
   margin-right: auto;
+  overflow:auto;
+  /* border: solid white; */
+  
 }
 
 .grid {
@@ -167,6 +176,7 @@ img {
   display: inline-flex;
   align-items: center;
 }
+
 
 /* ===== BREAKPOINTS ===== */
 

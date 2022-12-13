@@ -13,6 +13,7 @@
     "@material-ui/icons": "^4.11.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-nhl-logos": "^1.2.4",
     "styled-components": "^5.3.6"
   },
   "devDependencies": {
