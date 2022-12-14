@@ -13,6 +13,12 @@
   backdrop-filter: blur(5px);
 }
 
+.gamecard:hover,
+.gamecard:focus{
+  transform: scale(1.045);
+  transition: 0.3s ease-out;
+}
+
 .gamecard__time {
   display: flex;
   justify-content: center;
@@ -94,8 +100,4 @@
   .team__title {
     font-size: var(--tiny-font-size);
   }
-}
-
-/* Small Devices */
-@media screen and (max-width: 350px) {
 }
