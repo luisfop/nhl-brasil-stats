@@ -6,6 +6,12 @@
     place-items:  center;
 }
 
+.home__title{
+    text-align: center;
+    font-size: var(--h1-font-size);
+    color: var(--title-color);
+}
+
 
 @media screen and (min-width: 992px) {
 

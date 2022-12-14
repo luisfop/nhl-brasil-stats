@@ -1,10 +1,16 @@
 .gamecard {
-  border: solid white;
   width: 25rem;
   height: 15rem;
   display: flex;
   flex-direction: column;
   border-radius: 1rem;
+  background: rgba(233, 232, 232, 0.08);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 59, 59, 0.83);
+  cursor: pointer;
+  backdrop-filter: blur(5px);
 }
 
 .gamecard__time {
@@ -52,11 +58,11 @@
     height: 12rem;
   }
 
-  .gamecard__time{
+  .gamecard__time {
     font-size: var(--normal-font-size);
   }
 
-  .team__image{
+  .team__image {
     width: 4rem;
     height: 4rem;
   }
@@ -66,19 +72,17 @@
   }
 }
 
-
-
 @media screen and (max-width: 576px) {
   .gamecard {
     width: 16rem;
     height: 10rem;
   }
 
-  .gamecard__time{
+  .gamecard__time {
     font-size: var(--tiny-font-size);
   }
 
-  .team__image{
+  .team__image {
     width: 3rem;
     height: 3rem;
   }
@@ -90,7 +94,6 @@
   .team__title {
     font-size: var(--tiny-font-size);
   }
-
 }
 
 /* Small Devices */

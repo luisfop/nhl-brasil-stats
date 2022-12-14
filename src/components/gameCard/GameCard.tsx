@@ -5,18 +5,18 @@ import { GameType } from '../../util/types/GamesTypes'
 
 const GameCard = ({teams} : {teams: GameType} ) => {
 
-    console.log('TEAMS -> ', teams)
+    const { home,away } = teams.teams;
 
-    const homeTeam = teams.teams.home;
-    const awayTeam = teams.teams.away;
+    const homeTeam = home;
+    const awayTeam = away;
     const homeTeamID: number = homeTeam.team.id;
     const awayTeamID: number = awayTeam.team.id;
 
     return (
         <div className="gamecard">
             <div className="gamecard__time">
-                <h2 className="">10:00</h2>
-                <p> 1o Periodo</p>
+                <h2 className="">{teams.linescore.currentPeriodTimeRemaining}</h2>
+                <time>{teams.linescore.currentPeriodOrdinal} Periodo</time>
             </div>
 
             <div className="teams">
