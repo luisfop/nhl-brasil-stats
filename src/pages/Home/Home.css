@@ -1,3 +1,10 @@
+.home{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    
+}
+
 .hero{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -8,15 +15,12 @@
 
 .home__title{
     text-align: center;
-    font-size: var(--h1-font-size);
-    color: var(--title-color);
+    font-size: var(--big-font-size);
+    color: var(--text-color);
 }
 
 
-@media screen and (min-width: 992px) {
 
-
-}
 
 /* Medium Devices */
 @media screen and (max-width: 780px) {
@@ -27,9 +31,3 @@
     }
 }
 
-@media screen and (max-width: 576px) {
-}
-
-/* Small Devices */
-@media screen and (max-width: 350px) {
-}
