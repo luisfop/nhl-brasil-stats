@@ -11,26 +11,22 @@ const Home = () => {
     useEffect(() => {
         API.getGames().then(games => {
             setGames(games.data.dates[0].games)
-            // fetched games
         });
     }, [])
 
     return (
-        <section className="section container">
+        <main className="section container">
 
-            <h3 className="section__subtitle">Jogos de hoje</h3>
+            <h3 className="home__title">Jogos de hoje</h3>
             <section className="container hero">
-
-                {games.map(game => (
-                    <GameCard teams={game} />
+                {games.map((game, index) => (
+                    <GameCard teams={game} key={index} />
                 ))}
-
-
             </section>
 
 
 
-        </section>
+        </main>
     )
 }
 
